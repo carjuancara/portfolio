@@ -1,0 +1,11 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "muestras de mis trabajos y un poco sobre mi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Juan Carabajal Argañaraz",
+  "license": "ISC"
+}

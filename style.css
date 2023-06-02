@@ -1,0 +1,302 @@
+* {
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+}
+/*  en todas las rutas */
+.container_desktop {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./background.jpg");
+  background-size: cover;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  width: 96vw;
+  height: 160px;
+}
+.marca_personal {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 450px;
+  height: 129px;
+  background: rgba(131, 56, 236, 0.25);
+  border-radius: 20px 45px;
+}
+.mi_avatar {
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 35px;
+  width: 79px;
+  height: 84px;
+  border-radius: 100%;
+}
+
+.titulo {
+  margin-left: 125px;
+  margin-top: 20px;
+  width: 247px;
+  height: 90px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ff006e;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*    */
+.titulo_nota {
+  margin-left: 15vw;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ff006e;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+  width: 600px;
+  height: 80px;
+}
+.list_menu {
+  display: flex;
+  width: 550px;
+  height: 55px;
+  border-radius: 20px 45px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  background: rgba(131, 56, 236, 0.25);
+}
+.item_menu {
+  display: flex;
+  list-style-type:circle;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin: 7px 10px;
+  width: max-content;
+}
+
+.info {
+  display: flex;
+  padding-top: 10px;
+  margin-top: 3vh;
+  margin-left: 15vw;
+  width: 70vw;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.section_skill {
+  width: 439px;
+  height: 468px;
+  background: rgba(131, 56, 236, 0.25);
+  border-radius: 40px 90px;
+}
+
+.list_skill {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 350px;
+  height: 320px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.item_skill {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: max-content;
+}
+.nota {
+  margin-top: 0;
+  display: flex;
+  margin-left: 15vw;
+  padding-left: 2.3vw;
+  width: 70vw;
+  height: 11vh;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 20px;
+  background: rgba(131, 56, 236, 0.25);
+  border-radius: 40px 90px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+}
+.nota p{
+  margin-top: 10px;
+  width: inherit;
+}
+
+.proyectos {
+  display: flex;
+  font-size: 50px;
+  width: 1000px;
+  height: 30px;
+  justify-content: flex-end;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: #ff006e;
+}
+
+.info_proyectos {
+  display: flex;
+  margin-top: 2.5vh;
+  margin-left: 3vw;
+  justify-content: space-around;
+  width: 92.5vw;
+  height: 600px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  color: rgba(255, 255, 255, 0.25);
+  border-radius: 40px 90px;
+}
+
+.info_proyectos .section_skill {
+  margin-top: 7vh;
+  width: 680px;
+  height: 468px;
+  background: rgba(131, 56, 236, 0.25);
+  border-radius: 40px 90px;
+}
+
+.info_proyectos .section_skill .titulo {
+  margin: 0;
+  width: inherit;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.image_proyect {
+  margin-left: 12vh;
+  width: 470px;
+  height: 235px;
+}
+.github_deploy {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 6vw;
+  width: 500px;
+  height: 50px;
+}
+.link_repo_deploy {
+  display: flex;
+  margin-left: 2vh;
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  align-items: center;
+  width: 500px;
+  height: 50px;
+}
+.icon {
+  background-color:#26ace4;
+  background: linear-gradient(to bottom,#58c2ec, #198de6);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.contenido {
+  display: flex;
+  margin-left: 200px;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 78vh;
+}
+.acerca_de {
+  display: flex;
+  flex-direction: column;
+  width: 997px;
+  height: inherit;
+  background: rgba(131, 56, 236, 0.25);
+  border-radius: 40px 90px;
+}
+.mi_cv {
+  margin-top: 510px;
+  width: 150px;
+  height: 150px;
+}
+.acerca_de .titulo {
+  margin-left: 0;
+  width: inherit;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.acerca_info {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+}
+.acerca_info p {
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  width: 560px;
+  font-size: 20px;
+}
+.mi_foto {
+  justify-content: center;
+  width: 330px;
+  height: 550px;
+}
+.contacto_contenedor {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 670px;
+  height: 250px;
+}
+.contacto_div {
+  display: flex;
+  width: 670px;
+  height: 87px;
+  margin-bottom: 10px;
+}
+.image_contacto {
+  width: 90px;
+  height: 80px;
+  border-radius: 20px 35px;
+}
+.div_a {
+  display: flex;
+  margin-left: 10px;
+  justify-content: left;
+  align-items: center;
+  width: 400px;
+  height: 87px;
+}
+
+.div_a a {
+  font-size: 20px;
+  height: max-content;
+  width: max-content;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
