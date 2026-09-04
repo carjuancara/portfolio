@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "Portfolio - Desarrollador Web E-commerce",
+    "lang": "es"
+  },
+  "nav": [
+    { "label": "Proyecto", "href": "#proyecto" },
+    { "label": "Stack", "href": "#stack" },
+    { "label": "Sobre mí", "href": "#sobre-mi" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+  "hero": {
+    "badge": "Desarrollador Full-Stack",
+    "heading": "Creo tiendas online",
+    "headingAccent": "completas y escalables",
+    "description": "Especializado en desarrollo de e-commerce con enfoque en experiencia de usuario, seguridad y rendimiento. Soluciones listas para producción desde cero.",
+    "cta": [
+      { "label": "Ver proyecto destacado", "href": "#proyecto", "variant": "primary" },
+      { "label": "Contactar", "href": "#contacto", "variant": "secondary" }
+    ]
+  },
+  "project": {
+    "label": "Proyecto Principal",
+    "title": "E-commerce de Moda Sustentable",
+    "subtitle": "Una plataforma completa de comercio electrónico que conecta marcas locales con consumidores conscientes",
+    "challenge": {
+      "title": "El Desafío",
+      "description": "Una marca de ropa sustentable necesitaba una presencia online completa para competir con grandes retailers. Requerían no solo un catálogo atractivo, sino un sistema robusto de gestión de inventario, procesamiento de pagos seguro y herramientas de marketing integradas."
+    },
+    "solution": {
+      "title": "La Solución",
+      "description": "Desarrollé una plataforma e-commerce completa desde cero, priorizando rendimiento, seguridad y experiencia de usuario. La solución incluye gestión integral de productos, sistema de autenticación seguro, procesamiento de pagos con múltiples pasarelas, y un panel de administración completo para gestión de pedidos, inventario y reportes de ventas."
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "Plataforma escalable capaz de manejar miles de usuarios concurrentes, con tiempos de carga inferiores a 2 segundos, tasa de conversión optimizada del 4.2%, y sistema de pagos con 99.9% de disponibilidad."
+    },
+    "meta": [
+      { "label": "Rol", "value": "Full-Stack Developer" },
+      { "label": "Duración", "value": "4 meses" },
+      { "label": "Estado", "value": "En producción" },
+      { "label": "Demo", "value": "Ver en vivo →", "href": "#" }
+    ]
+  },
+  "features": {
+    "label": "Características",
+    "title": "Funcionalidades Implementadas",
+    "items": [
+      { "icon": "🛍️", "title": "Catálogo Dinámico", "description": "Sistema completo de productos con categorías, filtros avanzados, búsqueda en tiempo real, y sistema de recomendaciones basado en preferencias del usuario." },
+      { "icon": "🛒", "title": "Carrito de Compras", "description": "Carrito persistente con actualización en tiempo real, cálculo automático de envíos, aplicación de cupones de descuento y gestión de stock en tiempo real." },
+      { "icon": "🔐", "title": "Autenticación Segura", "description": "Sistema robusto con JWT, OAuth social login, verificación por email, recuperación de contraseña y protección contra ataques de fuerza bruta." },
+      { "icon": "❤️", "title": "Lista de Deseos", "description": "Funcionalidad de wishlist con sincronización entre dispositivos, notificaciones de cambios de precio y opción de compartir con amigos." },
+      { "icon": "⚙️", "title": "Panel de Admin", "description": "Dashboard completo con métricas en tiempo real, gestión de productos, pedidos e inventario, reportes de ventas y herramientas de marketing." },
+      { "icon": "💳", "title": "Pagos Online", "description": "Integración con múltiples pasarelas (Stripe, Mercado Pago), procesamiento seguro con encriptación, manejo de webhooks y sistema de reembolsos." }
+    ]
+  },
+  "techStack": {
+    "label": "Tecnologías",
+    "title": "Stack Tecnológico",
+    "subtitle": "Herramientas y tecnologías modernas para crear soluciones escalables y mantenibles",
+    "categories": [
+      {
+        "title": "Frontend",
+        "items": [
+          { "name": "React / Svelte", "badge": "Core" },
+          { "name": "TypeScript", "badge": "Core" },
+          { "name": "Tailwind CSS" },
+          { "name": "Redux / Context API" },
+          { "name": "React Query" }
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          { "name": "Django", "badge": "Core" },
+          { "name": "Django REST Framework" },
+          { "name": "Celery (tareas async)" },
+          { "name": "Redis (caché)" }
+        ]
+      },
+      {
+        "title": "Base de Datos",
+        "items": [
+          { "name": "PostgreSQL", "badge": "Principal" },
+          { "name": "Redis" }
+        ]
+      },
+      {
+        "title": "Autenticación",
+        "items": [
+          { "name": "JWT Tokens", "badge": "Core" },
+          { "name": "OAuth 2.0" },
+          { "name": "Django Allauth" },
+          { "name": "bcrypt" }
+        ]
+      },
+      {
+        "title": "APIs & Integraciones",
+        "items": [
+          { "name": "RESTful APIs" },
+          { "name": "Mercado Pago SDK" },
+          { "name": "SendGrid (emails)" },
+        ]
+      },
+      {
+        "title": "DevOps & Deploy",
+        "items": [
+          { "name": "Docker" },
+          { "name": "Nginx" },
+          { "name": "CI/CD (GitHub Actions)" },
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Interfaz",
+    "title": "Vistas del Proyecto",
+    "subtitle": "Diseño intuitivo y funcional en todas las pantallas",
+    "items": [
+      { "src": "assets/home.png", "alt": "Página Principal", "label": "Página Principal" },
+      { "src": "assets/detail.png", "alt": "Página de Producto", "label": "Página de Producto" },
+      { "src": "assets/cart.png", "alt": "Carrito de Compras", "label": "Carrito de Compras" },
+      { "src": "assets/admin.png", "alt": "Dashboard de Administración", "label": "Dashboard de Administración" },
+      { "src": "assets/profile.png", "alt": "Perfil de Usuario", "label": "Perfil de Usuario" }
+    ]
+  },
+  "learnings": {
+    "label": "Experiencia",
+    "title": "Desafíos Técnicos y Aprendizajes",
+    "subtitle": "Problemas reales que enfrenté y cómo los resolví",
+    "items": [
+      {
+        "title": "Optimización de Rendimiento",
+        "challenge": "Los tiempos de carga eran lentos con catálogos grandes (+1000 productos).",
+        "solution": "Implementé paginación del lado del servidor, lazy loading de imágenes con Intersection Observer, y caché de Redis para queries frecuentes. Reduje el tiempo de carga de 5s a menos de 2s."
+      },
+      {
+        "title": "Seguridad en Pagos",
+        "challenge": "Garantizar la seguridad en el procesamiento de pagos y protección de datos sensibles.",
+        "solution": "Implementé PCI compliance usando tokens de Stripe, nunca almacenando datos de tarjetas. Añadí protección CSRF, rate limiting, y encriptación end-to-end para datos sensibles."
+      },
+      {
+        "title": "Manejo de Stock en Tiempo Real",
+        "challenge": "Evitar overselling cuando múltiples usuarios compran simultáneamente.",
+        "solution": "Implementé transacciones atómicas en la base de datos con locks pessimistas, sistema de reserva temporal de productos, y webhooks para sincronización con el inventario físico."
+      },
+      {
+        "title": "Arquitectura Escalable",
+        "challenge": "Diseñar una arquitectura que soporte crecimiento futuro sin refactorización completa.",
+        "solution": "Apliqué principios de Clean Architecture y SOLID, separando lógica de negocio de infraestructura. Implementé microservicios para funcionalidades críticas como pagos y notificaciones."
+      },
+      {
+        "title": "Testing y QA",
+        "challenge": "Garantizar calidad y prevenir regresiones en un proyecto complejo.",
+        "solution": "Implementé cobertura de tests del 85%: unit tests con Jest/Pytest, integration tests para APIs, y E2E tests con Cypress para flujos críticos como checkout."
+      },
+      {
+        "title": "UX y Conversión",
+        "challenge": "Mejorar la tasa de conversión y reducir abandono del carrito.",
+        "solution": "Implementé checkout en un paso, guardado automático del carrito, recuperación de carritos abandonados por email, y optimización mobile-first que aumentó conversión un 35%."
+      }
+    ]
+  },
+  "about": {
+    "image": "assets/user.jpg",
+    "title": "Sobre Mí",
+    "paragraphs": [
+      "Soy un desarrollador web full-stack especializado en crear soluciones de e-commerce que generan valor real para negocios. Mi enfoque va más allá del código: entiendo las necesidades del negocio y las traduzco en productos digitales escalables y mantenibles.",
+      "Me apasiona resolver problemas complejos con soluciones elegantes. Cada proyecto es una oportunidad para aprender nuevas tecnologías y perfeccionar mi craft. Creo en código limpio, buenas prácticas, y en la importancia de la experiencia del usuario final.",
+      "Mi experiencia desarrollando tiendas online completas me ha dado una comprensión profunda de los desafíos del e-commerce: desde la arquitectura backend hasta los detalles de UX que impactan en la conversión."
+    ],
+    "skills": [
+      "Full-Stack Development",
+      "E-commerce",
+      "API Design",
+      "Database Architecture",
+      "Payment Integration",
+      "DevOps"
+    ]
+  },
+  "contact": {
+    "label": "Hablemos",
+    "title": "¿Tienes un proyecto en mente?",
+    "subtitle": "Estoy disponible para proyectos freelance y oportunidades full-time. Conversemos sobre cómo puedo ayudarte.",
+    "items": [
+      { "icon": "✉️", "text": "tu@email.com", "href": "mailto:tu@email.com" },
+      { "icon": "💼", "text": "LinkedIn", "href": "https://linkedin.com/in/tu-perfil" },
+      { "icon": "💻", "text": "GitHub", "href": "https://github.com/tu-usuario" }
+    ],
+    "cta": { "label": "Enviar mensaje", "href": "mailto:tu@email.com" }
+  },
+  "footer": {
+    "text": "© 2026 Portfolio Desarrollador Web. Todos los derechos reservados."
+  }
+}
