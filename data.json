@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Portfolio - Desarrollador Web E-commerce",
+    "title": "Portfolio - Desarrollador Full-Stack",
     "lang": "es"
   },
   "nav": [
@@ -11,9 +11,9 @@
   ],
   "hero": {
     "badge": "Desarrollador Full-Stack",
-    "heading": "Creo tiendas online",
+    "heading": "Tienda online",
     "headingAccent": "completas y escalables",
-    "description": "Especializado en desarrollo de e-commerce con enfoque en experiencia de usuario, seguridad y rendimiento. Soluciones listas para producción desde cero.",
+    "description": "Desarrollo de e-commerce con enfoque en experiencia de usuario, seguridad y rendimiento. Soluciones listas para producción desde cero.",
     "cta": [
       { "label": "Ver proyecto destacado", "href": "#proyecto", "variant": "primary" },
       { "label": "Contactar", "href": "#contacto", "variant": "secondary" }
@@ -21,7 +21,7 @@
   },
   "project": {
     "label": "Proyecto Principal",
-    "title": "E-commerce de Moda Sustentable",
+    "title": "E-commerce articulos varios",
     "subtitle": "Una plataforma completa de comercio electrónico que conecta marcas locales con consumidores conscientes",
     "challenge": {
       "title": "El Desafío",
@@ -38,7 +38,7 @@
     "meta": [
       { "label": "Rol", "value": "Full-Stack Developer" },
       { "label": "Duración", "value": "4 meses" },
-      { "label": "Estado", "value": "En producción" },
+      { "label": "Estado", "value": "En Contrucción" },
       { "label": "Demo", "value": "Ver en vivo →", "href": "#" }
     ]
   },
@@ -46,12 +46,12 @@
     "label": "Características",
     "title": "Funcionalidades Implementadas",
     "items": [
-      { "icon": "🛍️", "title": "Catálogo Dinámico", "description": "Sistema completo de productos con categorías, filtros avanzados, búsqueda en tiempo real, y sistema de recomendaciones basado en preferencias del usuario." },
+      { "icon": "🛍️", "title": "Catálogo Dinámico", "description": "Sistema completo de productos con categorías, filtros avanzados, búsqueda en tiempo real" },
       { "icon": "🛒", "title": "Carrito de Compras", "description": "Carrito persistente con actualización en tiempo real, cálculo automático de envíos, aplicación de cupones de descuento y gestión de stock en tiempo real." },
-      { "icon": "🔐", "title": "Autenticación Segura", "description": "Sistema robusto con JWT, OAuth social login, verificación por email, recuperación de contraseña y protección contra ataques de fuerza bruta." },
-      { "icon": "❤️", "title": "Lista de Deseos", "description": "Funcionalidad de wishlist con sincronización entre dispositivos, notificaciones de cambios de precio y opción de compartir con amigos." },
-      { "icon": "⚙️", "title": "Panel de Admin", "description": "Dashboard completo con métricas en tiempo real, gestión de productos, pedidos e inventario, reportes de ventas y herramientas de marketing." },
-      { "icon": "💳", "title": "Pagos Online", "description": "Integración con múltiples pasarelas (Stripe, Mercado Pago), procesamiento seguro con encriptación, manejo de webhooks y sistema de reembolsos." }
+      { "icon": "🔐", "title": "Autenticación Segura", "description": "Sistema robusto con JWT, verificación por email, recuperación de contraseña y protección contra ataques de fuerza bruta." },
+      { "icon": "❤️", "title": "Lista de Deseos", "description": "Funcionalidad de wishlist(favoritos)" },
+      { "icon": "⚙️", "title": "Panel de Admin", "description": "Dashboard completo con métricas en tiempo real, gestión de productos, inventario, reportes de ventas" },
+      { "icon": "💳", "title": "Pagos Online", "description": "Integración con ( Mercado Pago)" }
     ]
   },
   "techStack": {
@@ -62,11 +62,9 @@
       {
         "title": "Frontend",
         "items": [
-          { "name": "React / Svelte", "badge": "Core" },
-          { "name": "TypeScript", "badge": "Core" },
-          { "name": "Tailwind CSS" },
-          { "name": "Redux / Context API" },
-          { "name": "React Query" }
+          { "name": "Sveltekit 5 con runas", "badge": "Core" },
+          { "name": "TypeScript/Javascript", "badge": "Core" },
+          { "name": "Tailwind CSS" }
         ]
       },
       {
@@ -99,15 +97,15 @@
         "items": [
           { "name": "RESTful APIs" },
           { "name": "Mercado Pago SDK" },
-          { "name": "SendGrid (emails)" },
+          { "name": "GMAIL (emails solo para prueba) " }
         ]
       },
       {
         "title": "DevOps & Deploy",
         "items": [
-          { "name": "Docker" },
+          { "name": "Docker / Docker-compose" },
           { "name": "Nginx" },
-          { "name": "CI/CD (GitHub Actions)" },
+          { "name": "CI/CD (GitHub Actions)" }
         ]
       }
     ]
