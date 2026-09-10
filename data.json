@@ -40,7 +40,7 @@
       { "label": "Rol", "value": "Full-Stack Developer" },
       { "label": "Duración", "value": "6+ meses" },
       { "label": "Estado", "value": "Desplegado" },
-      { "label": "Demo", "value": "Ver en vivo →", "href": "#" }
+      { "label": "Demo", "value": "Contactame →", "href": "#contacto" }
     ]
   },
   "features": {
