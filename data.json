@@ -10,35 +10,36 @@
     { "label": "Contacto", "href": "#contacto" }
   ],
   "hero": {
-    "badge": "Desarrollador Full-Stack",
-    "heading": "Tienda online",
-    "headingAccent": "completas y escalables",
-    "description": "Desarrollo de e-commerce con enfoque en experiencia de usuario, seguridad y rendimiento. Soluciones listas para producción desde cero.",
+    "badge": "Desarrollo Full-Stack",
+    "heading": "D'Todo",
+    "headingAccent": "e-commerce completo y escalable",
+    "description": "E-commerce de artículos varios con backend Django y frontend SvelteKit. Autenticación JWT, pagos con MercadoPago, panel admin y reportes en tiempo real.",
     "cta": [
-      { "label": "Ver proyecto destacado", "href": "#proyecto", "variant": "primary" },
+      { "label": "Ver proyecto", "href": "#proyecto", "variant": "primary" },
       { "label": "Contactar", "href": "#contacto", "variant": "secondary" }
     ]
   },
   "project": {
     "label": "Proyecto Principal",
-    "title": "E-commerce articulos varios",
-    "subtitle": "Una plataforma completa de comercio electrónico que conecta marcas locales con consumidores conscientes",
+    "title": "D'Todo",
+    "subtitle": "E-commerce de artículos varios",
+    "subtitlebackup": "Pensado para tu día a día con todo lo que necesitas, desde almacen hasta tu outfit",
     "challenge": {
       "title": "El Desafío",
-      "description": "Una marca de ropa sustentable necesitaba una presencia online completa para competir con grandes retailers. Requerían no solo un catálogo atractivo, sino un sistema robusto de gestión de inventario, procesamiento de pagos seguro y herramientas de marketing integradas."
+      "description": "Crear un e-commerce completo para el mercado argentino que integre catálogo de productos, carrito de compras, pagos con MercadoPago, sistema de reseñas, newsletter y panel de administración con reportes. Todo con una arquitectura limpia, escalable y bien testada."
     },
     "solution": {
       "title": "La Solución",
-      "description": "Desarrollé una plataforma e-commerce completa desde cero, priorizando rendimiento, seguridad y experiencia de usuario. La solución incluye gestión integral de productos, sistema de autenticación seguro, procesamiento de pagos con múltiples pasarelas, y un panel de administración completo para gestión de pedidos, inventario y reportes de ventas."
+      "description": "Lo Desarrolle desde cero con una arquitectura separada en frontend (SvelteKit 5) y backend (Django REST Framework). El backend sigue el patrón command/query con services.py y selectors.py, autenticación JWT via cookies httpOnly, integración con MercadoPago usando Strategy+Factory pattern, tareas asíncronas con Celery, y almacenamiento de imágenes en Cloudinary. El frontend aprovecha Svelte 5 Runes para estado reactivo y Tailwind CSS 4 para el diseño."
     },
     "results": {
       "title": "Resultados",
-      "description": "Plataforma escalable capaz de manejar miles de usuarios concurrentes, con tiempos de carga inferiores a 2 segundos, tasa de conversión optimizada del 4.2%, y sistema de pagos con 99.9% de disponibilidad."
+      "description": "Plataforma desplegada con 12 apps backend, 18+ rutas frontend, autenticación segura sin tokens expuestos, pagos integrados con MercadoPago Checkout Pro, sistema de reseñas con moderación, newsletter con doble opt-in, formulario de contacto con CAPTCHA Turnstile, y panel admin Jazzmin con reportes KPI y exportación CSV."
     },
     "meta": [
       { "label": "Rol", "value": "Full-Stack Developer" },
-      { "label": "Duración", "value": "4 meses" },
-      { "label": "Estado", "value": "En Contrucción" },
+      { "label": "Duración", "value": "6+ meses" },
+      { "label": "Estado", "value": "Desplegado" },
       { "label": "Demo", "value": "Ver en vivo →", "href": "#" }
     ]
   },
@@ -46,12 +47,51 @@
     "label": "Características",
     "title": "Funcionalidades Implementadas",
     "items": [
-      { "icon": "🛍️", "title": "Catálogo Dinámico", "description": "Sistema completo de productos con categorías, filtros avanzados, búsqueda en tiempo real" },
-      { "icon": "🛒", "title": "Carrito de Compras", "description": "Carrito persistente con actualización en tiempo real, cálculo automático de envíos, aplicación de cupones de descuento y gestión de stock en tiempo real." },
-      { "icon": "🔐", "title": "Autenticación Segura", "description": "Sistema robusto con JWT, verificación por email, recuperación de contraseña y protección contra ataques de fuerza bruta." },
-      { "icon": "❤️", "title": "Lista de Deseos", "description": "Funcionalidad de wishlist(favoritos)" },
-      { "icon": "⚙️", "title": "Panel de Admin", "description": "Dashboard completo con métricas en tiempo real, gestión de productos, inventario, reportes de ventas" },
-      { "icon": "💳", "title": "Pagos Online", "description": "Integración con ( Mercado Pago)" }
+      {
+        "icon": "🛍️",
+        "title": "Catálogo Dinámico",
+        "description": "Productos con categorías, imágenes múltiples (Cloudinary), búsqueda, filtros, paginación, productos destacados y swimlanes por categoría."
+      },
+      {
+        "icon": "🛒",
+        "title": "Carrito de Compras",
+        "description": "Carrito persistente sincronizado con servidor, actualización en tiempo real, aplicación de cupones de descuento y gestión de stock."
+      },
+      {
+        "icon": "🔐",
+        "title": "Autenticación JWT",
+        "description": "Sistema con JWT via cookies httpOnly (access 30min, refresh 30 días), registro, login, recuperación de contraseña por email y perfil con imagen."
+      },
+      {
+        "icon": "💳",
+        "title": "Pagos MercadoPago",
+        "description": "Integración con MercadoPago Checkout Pro usando Strategy+Factory pattern. Soporte para multi-item, cupones, webhooks y verificación de pago."
+      },
+      {
+        "icon": "⭐",
+        "title": "Reseñas y Reviews",
+        "description": "Sistema de reseñas con calificación 1-5 estrellas, moderación por admin, media de calificación por producto y reseñas únicas por usuario."
+      },
+      {
+        "icon": "❤️",
+        "title": "Lista de Deseos",
+        "description": "Favoritos sincronizados con servidor, toggle agregar/quitar, limpiar todo y sincronización automática al hacer login."
+      },
+      {
+        "icon": "📰",
+        "title": "Newsletter",
+        "description": "Suscripción con doble opt-in, confirmación por token URL, desuscripción y envío de emails festivos con Celery."
+      },
+      {
+        "icon": "✉️",
+        "title": "Formulario de Contacto",
+        "description": "Formulario con protección Cloudflare Turnstile CAPTCHA, honeypot anti-spam, rate limiting (10/hour), logging de IP y notificación por email."
+      },
+      {
+        "icon": "📊",
+        "title": "Reportes Admin",
+        "description": "Dashboard KPI con ventas por período, ranking de productos, desglose por categoría, métricas de conversión de carrito, carritos abandonados y exportación CSV."
+      }
     ]
   },
   "techStack": {
@@ -62,50 +102,52 @@
       {
         "title": "Frontend",
         "items": [
-          { "name": "Sveltekit 5 con runas", "badge": "Core" },
-          { "name": "TypeScript/Javascript", "badge": "Core" },
-          { "name": "Tailwind CSS" }
+          { "name": "SvelteKit 2.43", "badge": "Core" },
+          { "name": "Svelte 5.39 (Runes)", "badge": "Core" },
+          { "name": "Tailwind CSS 4.1" },
+          { "name": "Vite 7.1" }
         ]
       },
       {
         "title": "Backend",
         "items": [
-          { "name": "Django", "badge": "Core" },
-          { "name": "Django REST Framework" },
-          { "name": "Celery (tareas async)" },
-          { "name": "Redis (caché)" }
+          { "name": "Django 5.2", "badge": "Core" },
+          { "name": "Django REST Framework 3.16" },
+          { "name": "SimpleJWT (auth)" },
+          { "name": "Celery 5.3 + Redis" }
         ]
       },
       {
         "title": "Base de Datos",
         "items": [
-          { "name": "PostgreSQL", "badge": "Principal" },
-          { "name": "Redis" }
+          { "name": "PostgreSQL 16", "badge": "Principal" },
+          { "name": "Redis 7 (caché + broker)" }
         ]
       },
       {
         "title": "Autenticación",
         "items": [
-          { "name": "JWT Tokens", "badge": "Core" },
-          { "name": "OAuth 2.0" },
-          { "name": "Django Allauth" },
-          { "name": "bcrypt" }
+          { "name": "JWT httpOnly cookies", "badge": "Core" },
+          { "name": "CSRF Protection" },
+          { "name": "Rate Limiting" }
         ]
       },
       {
         "title": "APIs & Integraciones",
         "items": [
           { "name": "RESTful APIs" },
-          { "name": "Mercado Pago SDK" },
-          { "name": "GMAIL (emails solo para prueba) " }
+          { "name": "MercadoPago SDK" },
+          { "name": "Cloudinary (imágenes)" },
+          { "name": "drf-spectacular (Swagger)" },
+          { "name": "Cloudflare Turnstile" }
         ]
       },
       {
         "title": "DevOps & Deploy",
         "items": [
-          { "name": "Docker / Docker-compose" },
-          { "name": "Nginx" },
-          { "name": "CI/CD (GitHub Actions)" }
+          { "name": "Docker / Docker Compose" },
+          { "name": "Devcontainers" },
+          { "name": "Jazzmin Admin UI" }
         ]
       }
     ]
@@ -115,11 +157,31 @@
     "title": "Vistas del Proyecto",
     "subtitle": "Diseño intuitivo y funcional en todas las pantallas",
     "items": [
-      { "src": "assets/home.png", "alt": "Página Principal", "label": "Página Principal" },
-      { "src": "assets/detail.png", "alt": "Página de Producto", "label": "Página de Producto" },
-      { "src": "assets/cart.png", "alt": "Carrito de Compras", "label": "Carrito de Compras" },
-      { "src": "assets/admin.png", "alt": "Dashboard de Administración", "label": "Dashboard de Administración" },
-      { "src": "assets/profile.png", "alt": "Perfil de Usuario", "label": "Perfil de Usuario" }
+      {
+        "src": "assets/home.png",
+        "alt": "Página Principal",
+        "label": "Página Principal"
+      },
+      {
+        "src": "assets/detail.png",
+        "alt": "Página de Producto",
+        "label": "Página de Producto"
+      },
+      {
+        "src": "assets/cart.png",
+        "alt": "Carrito de Compras",
+        "label": "Carrito de Compras"
+      },
+      {
+        "src": "assets/admin.png",
+        "alt": "Dashboard de Administración",
+        "label": "Dashboard de Administración"
+      },
+      {
+        "src": "assets/profile.png",
+        "alt": "Perfil de Usuario",
+        "label": "Perfil de Usuario"
+      }
     ]
   },
   "learnings": {
@@ -128,34 +190,34 @@
     "subtitle": "Problemas reales que enfrenté y cómo los resolví",
     "items": [
       {
-        "title": "Optimización de Rendimiento",
-        "challenge": "Los tiempos de carga eran lentos con catálogos grandes (+1000 productos).",
-        "solution": "Implementé paginación del lado del servidor, lazy loading de imágenes con Intersection Observer, y caché de Redis para queries frecuentes. Reduje el tiempo de carga de 5s a menos de 2s."
+        "title": "Arquitectura Command/Query",
+        "challenge": "El backend crecía rápido y la lógica de negocio se mezclaba con las vistas y serializers.",
+        "solution": "Separé responsabilidades en services.py (escritura con @transaction.atomic) y selectors.py (lecturas). Cada app sigue un patrón consistente con models, views, serializers, selectors, services y tasks."
       },
       {
-        "title": "Seguridad en Pagos",
-        "challenge": "Garantizar la seguridad en el procesamiento de pagos y protección de datos sensibles.",
-        "solution": "Implementé PCI compliance usando tokens de Stripe, nunca almacenando datos de tarjetas. Añadí protección CSRF, rate limiting, y encriptación end-to-end para datos sensibles."
+        "title": "JWT Seguro con Cookies",
+        "challenge": "Los tokens JWT en headers Authorization son vulnerables a XSS y no persisten entre sesiones.",
+        "solution": "Implementé JWT via cookies httpOnly con access token de 30min y refresh de 30 días. Custom CookieJWTAuthentication que lee del cookie con fallback al header para compatibilidad."
       },
       {
-        "title": "Manejo de Stock en Tiempo Real",
-        "challenge": "Evitar overselling cuando múltiples usuarios compran simultáneamente.",
-        "solution": "Implementé transacciones atómicas en la base de datos con locks pessimistas, sistema de reserva temporal de productos, y webhooks para sincronización con el inventario físico."
+        "title": "Patrón Strategy+Factory para Pagos",
+        "challenge": "Integrar MercadoPago de forma extensible por si se necesita otro proveedor en el futuro.",
+        "solution": "Diseñé una clase base abstracta PaymentGateway con Factory pattern. MercadoPago es la implementación actual, pero registrar un nuevo proveedor es solo una línea con register_service()."
       },
       {
-        "title": "Arquitectura Escalable",
-        "challenge": "Diseñar una arquitectura que soporte crecimiento futuro sin refactorización completa.",
-        "solution": "Apliqué principios de Clean Architecture y SOLID, separando lógica de negocio de infraestructura. Implementé microservicios para funcionalidades críticas como pagos y notificaciones."
+        "title": "Svelte 5 Runes",
+        "challenge": "Migrar el estado reactivo del frontend de stores legacy a la nueva API de Runes de Svelte 5.",
+        "solution": "Reescribí todos los stores con $state, $derived y $effect. Cada store (.svelte.js) es un módulo limpio con estado y funciones, sin clases ni constructores."
       },
       {
-        "title": "Testing y QA",
-        "challenge": "Garantizar calidad y prevenir regresiones en un proyecto complejo.",
-        "solution": "Implementé cobertura de tests del 85%: unit tests con Jest/Pytest, integration tests para APIs, y E2E tests con Cypress para flujos críticos como checkout."
+        "title": "Imágenes Asíncronas con Celery",
+        "challenge": "Las imágenes de productos venían de URLs externas y necesitaban procesamiento y almacenamiento.",
+        "solution": "Implementé tareas Celery que descargan imágenes de URLs, las procesan con Pillow y las suben a Cloudinary. El admin carga categorías y productos con management commands."
       },
       {
-        "title": "UX y Conversión",
-        "challenge": "Mejorar la tasa de conversión y reducir abandono del carrito.",
-        "solution": "Implementé checkout en un paso, guardado automático del carrito, recuperación de carritos abandonados por email, y optimización mobile-first que aumentó conversión un 35%."
+        "title": "Webhooks de MercadoPago",
+        "challenge": "Verificar pagos de forma confiable cuando el usuario puede cerrar el navegador antes del redirect.",
+        "solution": "Implementé endpoint de webhook IPN que MercadoPago llama async, más verificación manual desde el frontend en la página de success. Doble garantía de que el pago se registre."
       }
     ]
   },
@@ -163,15 +225,15 @@
     "image": "assets/user.jpg",
     "title": "Sobre Mí",
     "paragraphs": [
-      "Soy un desarrollador web full-stack especializado en crear soluciones de e-commerce que generan valor real para negocios. Mi enfoque va más allá del código: entiendo las necesidades del negocio y las traduzco en productos digitales escalables y mantenibles.",
-      "Me apasiona resolver problemas complejos con soluciones elegantes. Cada proyecto es una oportunidad para aprender nuevas tecnologías y perfeccionar mi craft. Creo en código limpio, buenas prácticas, y en la importancia de la experiencia del usuario final.",
-      "Mi experiencia desarrollando tiendas online completas me ha dado una comprensión profunda de los desafíos del e-commerce: desde la arquitectura backend hasta los detalles de UX que impactan en la conversión."
+      "Soy un desarrollador web full-stack. Mi proyecto más reciente, D'Todo, es un ecommerce de artículos varios con backend Django y frontend SvelteKit.",
+      "Me apasiona resolver problemas complejos con soluciones elegantes. En D'Todo apliqué patrones como Strategy+Factory para pagos, arquitectura command/query para el backend, y Svelte 5 Runes para un estado reactivo limpio. Cada proyecto es una oportunidad para aprender y perfeccionar mi craft.",
+      "Mi experiencia desarrollando me ha dado una comprensión profunda desde la arquitectura backend hasta los detalles de UX que impactan en la conversión."
     ],
     "skills": [
       "Full-Stack Development",
       "E-commerce",
       "API Design",
-      "Database Architecture",
+      "Django / SvelteKit",
       "Payment Integration",
       "DevOps"
     ]
@@ -181,11 +243,23 @@
     "title": "¿Tienes un proyecto en mente?",
     "subtitle": "Estoy disponible para proyectos freelance y oportunidades full-time. Conversemos sobre cómo puedo ayudarte.",
     "items": [
-      { "icon": "✉️", "text": "tu@email.com", "href": "mailto:tu@email.com" },
-      { "icon": "💼", "text": "LinkedIn", "href": "https://linkedin.com/in/tu-perfil" },
-      { "icon": "💻", "text": "GitHub", "href": "https://github.com/tu-usuario" }
+      {
+        "icon": "✉️",
+        "text": "E-mail",
+        "href": "mailto:carjuancara@gmail.com"
+      },
+      {
+        "icon": "💼",
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/in/carjuancara/"
+      },
+      {
+        "icon": "💻",
+        "text": "GitHub",
+        "href": "https://github.com/carjuancara"
+      }
     ],
-    "cta": { "label": "Enviar mensaje", "href": "mailto:tu@email.com" }
+    "cta": { "label": "Enviar mensaje", "href": "mailto:carjuancara@gmail.com" }
   },
   "footer": {
     "text": "© 2026 Portfolio Desarrollador Web. Todos los derechos reservados."

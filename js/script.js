@@ -61,28 +61,11 @@ function renderHero(hero) {
                 </h1>
                 <p>${escapeHtml(hero.description)}</p>
                 <div class="hero-cta">
-                    ${hero.cta.map(cta => `<a href="${safeHref(cta.href)}" class="btn btn-${escapeHtml(cta.variant)}">${escapeHtml(cta.label)}</a>`).join('')}
+
                 </div>
             </div>
             <div class="hero-image fade-in">
-                <svg class="hero-mockup" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <rect width="800" height="600" fill="white"/>
-                    <rect width="800" height="80" fill="#0a0a0a"/>
-                    <circle cx="40" cy="40" r="8" fill="#d4af37"/>
-                    <rect x="70" y="30" width="120" height="20" rx="4" fill="#fafafa"/>
-                    <rect x="660" y="30" width="40" height="20" rx="4" fill="#fafafa"/>
-                    <rect x="720" y="30" width="40" height="20" rx="4" fill="#fafafa"/>
-                    <rect x="50" y="120" width="700" height="400" rx="8" fill="#f5f5f5"/>
-                    <rect x="70" y="140" width="200" height="200" rx="8" fill="#e5e5e5"/>
-                    <rect x="70" y="360" width="200" height="30" rx="4" fill="#d4af37"/>
-                    <rect x="70" y="410" width="150" height="20" rx="4" fill="#c0c0c0"/>
-                    <rect x="300" y="140" width="200" height="200" rx="8" fill="#e5e5e5"/>
-                    <rect x="300" y="360" width="200" height="30" rx="4" fill="#d4af37"/>
-                    <rect x="300" y="410" width="150" height="20" rx="4" fill="#c0c0c0"/>
-                    <rect x="530" y="140" width="200" height="200" rx="8" fill="#e5e5e5"/>
-                    <rect x="530" y="360" width="200" height="30" rx="4" fill="#d4af37"/>
-                    <rect x="530" y="410" width="150" height="20" rx="4" fill="#c0c0c0"/>
-                </svg>
+                <img class="hero-mockup" src="assets/home.png" alt="Página principal del e-commerce D'Todo" fetchpriority="high">
             </div>
         </div>
     `;
