@@ -238,7 +238,7 @@ function renderContact(contact) {
                     return `
                         <div class="contact-item fade-in">
                             <div class="contact-icon">${escapeHtml(item.icon)}</div>
-                            <a href="${href}"${external ? ' target="_blank" rel="noreferrer"' : ''}>${escapeHtml(item.text)}</a>
+                            <a href="${href}" style="color: var(--color-accent-light);"${external ? ' target="_blank" rel="noreferrer"' : ''}>${escapeHtml(item.text)}</a>
                         </div>
                     `;
                 }).join('')}
