@@ -237,7 +237,7 @@ function renderContact(contact) {
                     const external = /^https?:\/\//.test(String(item.href || ''));
                     return `
                         <div class="contact-item fade-in">
-                            <div class="contact-icon">${escapeHtml(item.icon)}</div>
+                            <a class="contact-icon" href="${href}" aria-label="${escapeHtml(item.text)}"${external ? ' target="_blank" rel="noreferrer"' : ''}>${escapeHtml(item.icon)}</a>
                             <a href="${href}" style="color: var(--color-accent-light);"${external ? ' target="_blank" rel="noreferrer"' : ''}>${escapeHtml(item.text)}</a>
                         </div>
                     `;
